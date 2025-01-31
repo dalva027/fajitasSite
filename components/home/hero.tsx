@@ -29,11 +29,11 @@ export default function Hero() {
               placeholder="blur"
             />
            </div>  
-          <h2 className="text-3xl font-bold font-sans">
+          <h3 className="text-3xl font-bold font-fam">
             <Balancer>
               Proudly serving La Vernia and all surrounding communities.
             </Balancer>
-          </h2>
+          </h3>
           {/* <h3 className="text-muted-foreground">
             <Balancer>
               Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

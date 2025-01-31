@@ -5,6 +5,11 @@ import { Section, Container } from "@/components/craft";
 import { Card, CardContent } from "@/components/ui/card";
 
 import Placeholder from "@/public/placeholder.webp";
+import Skillet from "@/public/skillet.jpg";
+import Caldo from "@/public/caldo.webp";
+import Asada from "@/public/asada.jpeg";
+import Chori from "@/public/chorizopapas.jpg"
+import Taco from "@/public/tacos.webp"
 
 import {
   Carousel,
@@ -16,13 +21,19 @@ import {
 
 const photos = [
   {
-    src: Placeholder,
+    src: Caldo,
   },
   {
-    src: Placeholder,
+    src: Skillet,
   },
   {
-    src: Placeholder,
+    src: Asada,
+  },
+  {
+    src: Chori,
+  },
+  {
+    src: Taco,
   },
 ];
 

@@ -9,6 +9,8 @@ import { NavigationMenu, NavigationMenuLink, NavigationMenuList } from "../ui/na
 // import ModeToggle from "../mode-toggle"
 import { SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet"
 import ModeToggle from "../mode-toggle"
+import Image from "next/image"
+import Logo from "@/public/logo-faj.png"
 
 
 export function NavBar() {
@@ -16,16 +18,26 @@ export function NavBar() {
     return ( 
         <div className="flex items-center min-w-full w-full fixed justify-center p-2 z-[50] mt-[2rem]">
             <div className="flex justify-between md:w-[720px] w-[95%] border dark:border-zinc-900 dark:bg-black bg-opacity-10 relative backdrop-filter backdrop-blur-lg bg-white border-white border-opacity-20 rounded-xl p-2 shadow-lg">
-                <Dialog>
+                <Dialog >
                     
-                    <SheetTrigger asChild className="min-[800px]:hidden pr-1 transition">
-                        <Menu  viewBox="0 0 18 18" />
+                    <SheetTrigger asChild className="min-[800px]:hidden transition">
+                        <Menu   />
                         
                     </SheetTrigger>
-                    <SheetTitle className="min-[800px]:hidden pr-2 transition italic">Fajitas</SheetTitle>
+                    <SheetTitle className="min-[800px]:hidden transition italic text-black dark:text-white">
+                        <Link href="/">
+                            {/* <h1 className="font-bold">Fajitas</h1> */}
+                            <Image
+                                src={Logo}
+                                alt="Fajitas"
+                                width={65}
+                                height={95}    
+                            />
+                        </Link>
+                        </SheetTitle>
                     <SheetContent className="bg-white-500" side="left">
                         <SheetHeader>
-                            <SheetTitle>Fajitas</SheetTitle>
+                            <SheetTitle> Fajitas</SheetTitle>
                             <SheetDescription>
                                 From our kitchen to your table 
                             </SheetDescription>
@@ -33,7 +45,7 @@ export function NavBar() {
                         <div className="flex flex-col space-y-3 mt-[1rem] z-[99]">
                             <DialogClose asChild>
                                 <Link href="/">
-                                    <Button variant="outline" className="w-full">Home</Button>
+                                    <Button variant="outline" className="w-full font-bold">Home</Button>
                                 </Link>
                             </DialogClose>
                             <DialogClose asChild>
@@ -42,8 +54,8 @@ export function NavBar() {
                                 </Link>
                             </DialogClose>
                             <DialogClose asChild>
-                                <Link href="/automation">
-                                    <Button variant="outline" className="w-full">Find Us</Button>
+                                <Link href="/contact">
+                                    <Button variant="outline" className="w-full">Contact</Button>
                                 </Link>
                             </DialogClose>
                             <ModeToggle />
@@ -51,18 +63,24 @@ export function NavBar() {
                     </SheetContent>
                 </Dialog>
                 <NavigationMenu>
-                    <NavigationMenuList className="max-[825px]:hidden ">
+                    <NavigationMenuList className="max-[825px]:hidden">      
                         <Link href="/" className="pl-2">
-                            <h1 className="font-bold">Fajitas</h1>
+                            {/* <h1 className="font-bold">Fajitas</h1> */}
+                            <Image
+                                src={Logo}
+                                alt="Fajitas"
+                                width={100}
+                                height={100}    
+                            />
                         </Link>
                     </NavigationMenuList>
                 </NavigationMenu>
                 <div className="flex items-center gap-2 max-[825px]:hidden">
                     <Link href="/menu">
-                        <Button variant="ghost">Menu</Button>
+                        <Button variant="ghost" className="font-bold">Menu</Button>
                     </Link>
-                    <Link href="/automation">
-                        <Button variant="ghost">Contact</Button>
+                    <Link href="/contact">
+                        <Button variant="ghost" className="font-bold">Contact</Button>
                     </Link>
                     
                     <ModeToggle />
