@@ -19,6 +19,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+
 const photos = [
   {
     src: Caldo,
@@ -37,10 +38,10 @@ const photos = [
   },
 ];
 
-const FeatureNine = () => {
+const FeatureShow = () => {
   return (
     <Section>
-      <Container className="flex flex-col items-center gap-12 p-2 py-12 md:p-0">
+      <Container className="flex flex-col items-center gap-12 p-2 md:p-0">
         
         <Carousel className="w-full mb-6">
           <CarouselContent className="-ml-1">
@@ -73,4 +74,4 @@ const FeatureNine = () => {
   );
 };
 
-export default FeatureNine;
+export default FeatureShow;
