@@ -54,7 +54,7 @@ export default function Menu () {
 
             <div className="my-60 grid grid-cols-1 gap-4 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4; w-full">
             {items.map((item) => (
-              <Card className="bg-opacity-10 relative backdrop-filter backdrop-blur-lg bg-white flex flex-col w-50 h-40 border-slate-100 border-4 border-opacity-20">
+              <Card className="bg-opacity-10 relative backdrop-filter backdrop-blur-lg bg-white flex flex-col w-50 border-slate-100 border-4 border-opacity-20">
               <CardContent className="justify-center items-center flex flex-col">
                 <CardHeader>
                   {item.title}
