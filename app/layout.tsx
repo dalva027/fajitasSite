@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Fajitas Restaurant",
   description: "A place to enjoy and savor the flavor of our traditions",
+  icons: {
+    icon: '@/public/logo-faj.png'
+  }
 };
 
 export default function RootLayout({
