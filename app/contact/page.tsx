@@ -19,19 +19,22 @@ export default function Contact () {
             
             </div>
         </Container>
-        <div className="flex flex-col items-center justify-center md:flex-row">
-          <div className="p-2 font-fam">
+        <div className="flex flex-col items-center justify-center md:flex-row lg:px-20">
+          <div className="p-2 text-xl font-fam">
             <p>Address -</p>
             <p>12880 U.S. Hwy 87 W, La Vernia, TX</p>
             <br />
             <p>Hours -</p>
             <p>MON - SUN</p>
-            <p>??? - ???</p>
+            <p>6:00 A.M. - 3:00 P.M.</p>
             <br />
             <p>Phone Number -</p>  
             <p>(830) 581-7008</p>     
           </div>
+          
           <GoogleMapComponent center={mapCenter} zoom={15}/>
+          
+          
           
         </div>
       </Section>

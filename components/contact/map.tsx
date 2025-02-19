@@ -26,7 +26,7 @@
     
         return isLoaded ? (
             <GoogleMap
-                mapContainerStyle={{ width: '40%', height: '400px' }}
+                mapContainerStyle={{ width: '80%', height: '400px' }}
                 center={center}
                 zoom={zoom}
                 options={mapOptions}

@@ -22,9 +22,6 @@ import {
 
 const photos = [
   {
-    src: Caldo,
-  },
-  {
     src: Skillet,
   },
   {
@@ -32,6 +29,9 @@ const photos = [
   },
   {
     src: Chori,
+  },
+  {
+    src: Caldo,
   },
   {
     src: Taco,
