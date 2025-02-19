@@ -24,7 +24,7 @@ export function NavBar() {
                         <Menu   />
                         
                     </SheetTrigger>
-                    <SheetTitle className="min-[800px]:hidden transition italic text-black dark:text-white">
+                    <SheetTitle className="min-[800px]:hidden pr-5 transition italic text-black dark:text-white">
                         <Link href="/">
                             {/* <h1 className="font-bold">Fajitas</h1> */}
                             <Image
