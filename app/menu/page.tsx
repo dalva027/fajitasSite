@@ -4,7 +4,6 @@ import Image from "next/image";
 import Balancer from "react-wrap-balancer";
 import Place from "@/public/placeholder.webp"
 
-
 const items = [
   {
   title: "Tacos",
@@ -73,6 +72,11 @@ export default function Menu () {
            </div>
 
         </Container>
+
+        
+
+     
+
       </Section>
     )
   }
