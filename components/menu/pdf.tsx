@@ -26,7 +26,7 @@ const maxWidth = 800;
 type PDFFile = string | File | null;
 
 export default function Pdf() {
-  const [file, setFile] = useState<PDFFile>('./menu1.pdf');
+  const [file, setFile] = useState<PDFFile>('./menu.pdf');
   const [numPages, setNumPages] = useState<number>();
   const [containerRef, setContainerRef] = useState<HTMLElement | null>(null);
   const [containerWidth, setContainerWidth] = useState<number>();
